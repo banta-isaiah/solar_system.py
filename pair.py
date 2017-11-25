@@ -8,7 +8,8 @@ class Pair:
     """An ordered pair class."""
     
     def __init__(self, a = 0, b = 0):
-        """Constructor initializes a Pair object to (a, b).
+        """
+        Constructor initializes a Pair object to (a, b).
         
         Parameter:
             self: a Pair object
@@ -20,7 +21,8 @@ class Pair:
         self._b = b   # the pair's second value
 
     def getFirst(self):
-        """Return the first value of self.
+        """
+        Return the first value of self.
         
         Parameter:
             self: a Pair object
@@ -31,7 +33,8 @@ class Pair:
         return self._a
         
     def getSecond(self):
-        """Return the second value of self.
+        """
+        Return the second value of self.
         
         Parameter:
             self: a Pair object
@@ -42,7 +45,8 @@ class Pair:
         return self._b
 
     def get(self):
-        """Return the (a, b) tuple representing self.
+        """
+        Return the (a, b) tuple representing self.
         
         Parameter:
             self: a Pair object
@@ -53,7 +57,8 @@ class Pair:
         return (self._a, self._b)
         
     def __add__(self, pair2):
-        """Return a new Pair representing the component-wise sum 
+        """
+        Return a new Pair representing the component-wise sum 
            of self and pair2.
            
         Parameters:
@@ -68,7 +73,8 @@ class Pair:
         return Pair(sumA, sumB)
         
     def __sub__(self, pair2):
-        """Return a new Pair representing the component-wise 
+        """
+        Return a new Pair representing the component-wise 
            difference between self and pair2.
            
         Parameters:
@@ -83,7 +89,8 @@ class Pair:
         return Pair(diffA, diffB)
         
     def __mul__(self, scalar):
-        """Return a new Pair representing self multiplied by scalar.
+        """
+        Return a new Pair representing self multiplied by scalar.
            
         Parameters:
             self: a Pair object
@@ -95,7 +102,8 @@ class Pair:
         return Pair(self._a * scalar, self._b * scalar)
         
     def __truediv__(self, scalar):
-        """Return a new Pair representing self divided by scalar.
+        """
+        Return a new Pair representing self divided by scalar.
            
         Parameters:
             self: a Pair object
@@ -108,7 +116,8 @@ class Pair:
 
     
     def set(self, a, b):
-        """Set the two values in self.
+        """
+        Set the two values in self.
         
         Parameters:
             self: a Pair object
@@ -122,7 +131,8 @@ class Pair:
         self[1] = b
         
     def scale(self, scalar):
-        """Multiply the values in self by a scalar value.
+        """
+        Multiply the values in self by a scalar value.
         
         Parameters:
             self: a Pair object
@@ -134,7 +144,8 @@ class Pair:
         self.set(self._a * scalar, self._b * scalar)
 
     def __str__(self):
-        """Return an '(a, b)' string representation of self.
+        """
+        Return an '(a, b)' string representation of self.
         
         Parameter:
             self: a Pair object
@@ -145,7 +156,8 @@ class Pair:
         return '(' + str(self._a) + ', ' + str(self._b) + ')'
         
     def __eq__(self, pair2):
-        """Return whether self and pair2 contain the same ordered pair.
+        """
+        Return whether self and pair2 contain the same ordered pair.
            
         Parameters:
             self: a Pair object
@@ -159,7 +171,8 @@ class Pair:
         return (self._a == pair2._a) and (self._b == pair2._b)
 
     def __lt__(self, pair2):
-        """Return whether self < pair2.
+        """
+        Return whether self < pair2.
            
         Parameters:
             self: a Pair object
@@ -172,7 +185,8 @@ class Pair:
                ((self._a == pair2._a) and (self._b < pair2._b))
   
     def __getitem__(self, index):
-        """Return the first (index 0) or second (index 1) value
+        """
+        Return the first (index 0) or second (index 1) value
            in self.  For other index values, return None.
            
         Parameter:
@@ -188,8 +202,9 @@ class Pair:
         return None
         
     def __setitem__(self, index, value):
-        """Set the first (index 0) or second (index 1) value in
-           self to the given value.
+        """
+        Set the first (index 0) or second (index 1) value in
+        self to the given value.
            
         Parameters:
             index: an integer (0 or 1)
