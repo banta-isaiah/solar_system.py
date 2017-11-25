@@ -47,8 +47,10 @@ class System:
             del self._agents[position]
         
     def neighbors(self, position, distance):
-        """Return a list of agents within distance of
-           position (a tuple)."""
+        """
+        Return a list of agents within distance of
+           position (a tuple).
+        """
         
         neighbors = []
         for otherPosition in self._agents:
@@ -129,12 +131,6 @@ class Planet:
                    
         self._angle = self._angle - self._velocity
         
-        """
-        self._turtle.hideturtle()
-        self._turtle.goto(0,0)
-        self._turtle.right(self._velocity)
-        self._turtle.forward(self._distance)
-        self._turtle.showturtle()"""
 
 class Boid:
     """A boid in a agent-based flocking simulation."""
